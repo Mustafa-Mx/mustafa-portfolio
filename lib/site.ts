@@ -12,7 +12,7 @@ export const site = {
   github: "https://github.com/mustafa-mx",
   // Create a free account at cal.com, then put your handle/event here,
   // e.g. "mustafa-mehboob/intro-call". Leave "" to skip.
-  calLink: "",
+  calLink: "mustafa-mehboob-kbraq7/30min",
   // OR: Google Calendar's own appointment schedule. In Google Calendar
   // (desktop): Create -> Appointment schedule -> save -> Share -> copy the
   // booking-page link (calendar.app.google/... or the iframe src). Used when
