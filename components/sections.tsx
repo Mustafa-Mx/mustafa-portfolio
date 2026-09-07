@@ -46,6 +46,66 @@ export function StackMarquee() {
   )
 }
 
+/* ----------------------------------------------------------------- range */
+
+const range = [
+  {
+    title: "Product engineering",
+    body: "Interfaces people actually finish: React/Next frontends, real-time collaboration, dashboards, browser extensions and SDKs light enough to drop on anyone's site.",
+  },
+  {
+    title: "Platforms & APIs",
+    body: "Node, NestJS, Rails and Django services over PostgreSQL — payments, multi-tenancy, webhooks, background jobs, and schemas designed for the audit that follows.",
+  },
+  {
+    title: "Cloud & infrastructure",
+    body: "AWS estates built from nothing: private networking, containers, CDNs, CI/CD — infrastructure a small team can actually operate.",
+  },
+  {
+    title: "Security & incident response",
+    body: "Hardening, encryption at rest, least-privilege access, DDoS mitigation — and calm command of the room when it's happening for real.",
+  },
+  {
+    title: "Data & analytics",
+    body: "Event pipelines into warehouses, session replay, and the retrieval work that makes a dashboard feel instant instead of eventual.",
+  },
+  {
+    title: "AI in production",
+    body: "LLM features that survive contact with users: OpenAI-powered tooling, on-device vision guidance, and automation that publishes real work.",
+  },
+]
+
+export function Range() {
+  return (
+    <section className="mx-auto max-w-6xl px-5 py-20">
+      <Reveal>
+        <p className="annotation annotation-tick">section 02 — scope of works</p>
+        <h2 className="mt-3 font-extrabold tracking-[-0.02em]" style={{ fontSize: "var(--text-h2)" }}>
+          What four years covers
+        </h2>
+        <p className="mt-3 max-w-[56ch] text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
+          Visa platforms are the recent headline, but the range behind them is wider — a decade&apos;s
+          variety compressed into four years of shipping.
+        </p>
+      </Reveal>
+      <div className="mt-6">
+        <RevealLine />
+      </div>
+      <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {range.map((item, i) => (
+          <Reveal key={item.title} delay={(i % 3) * 0.1}>
+            <article className="plate plate-hover h-full p-6">
+              <p className="font-mono text-[12px] text-[var(--color-signal)]">{String(i + 1).padStart(2, "0")}</p>
+              <h3 className="mt-3 text-[17px] font-bold">{item.title}</h3>
+              <p className="mt-2 text-[14px] leading-relaxed text-[var(--color-ink-soft)]">{item.body}</p>
+            </article>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 /* -------------------------------------------------------------- thinking */
 
 const principles = [
@@ -79,7 +139,7 @@ export function Thinking() {
   return (
     <section id="thinking" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-20">
       <Reveal>
-        <p className="annotation annotation-tick">section 02 — operating principles</p>
+        <p className="annotation annotation-tick">section 03 — operating principles</p>
         <h2 className="mt-3 font-extrabold tracking-[-0.02em]" style={{ fontSize: "var(--text-h2)" }}>
           How I think about software
         </h2>
@@ -109,11 +169,11 @@ export function Thinking() {
 const projects = [
   {
     name: "UKVisaPortal",
-    role: "Team lead · 80%+ of features",
+    role: "Took over post-incident · Team lead",
     year: "2026",
     summary:
-      "A visa application platform that grew past $1M in revenue. I led the three-engineer team and the AWS architecture end to end — private networking, container orchestration, encrypted document storage — and the security posture that let it shrug off a live DDoS of ~700M requests.",
-    highlights: ["$1M+ revenue", "Live L7 DDoS survived", "Admin operations suite", "Multi-provider payments"],
+      "I inherited this platform in its worst week — right after a security incident, with a Layer-7 DDoS still coming in. I took command of the response, navigated the team through the attack (~600M of 700M requests blocked at peak), then rebuilt the AWS architecture and security posture from the ground up. Once it was stable, we pushed it to its best numbers ever: past $1M in revenue.",
+    highlights: ["Post-incident takeover", "Led team through live DDoS", "Rebuilt AWS + security posture", "Record revenue after recovery"],
     tech: ["TypeScript", "Node", "PostgreSQL", "Prisma", "AWS", "Cloudflare"],
   },
   {
@@ -220,9 +280,9 @@ const experience = [
     role: "Software Engineer — Team Lead",
     period: "Jan 2026 — Present",
     points: [
+      "Took over UKVisaPortal after a security incident and led the team through a live Layer-7 DDoS — then drove the recovered platform past $1M in revenue, its best run yet.",
       "Lead a 3-engineer team across two visa platforms, owning architecture, delivery and production.",
-      "Designed and run the AWS estate: private networking, containers, encrypted storage, CDN and WAF.",
-      "Led live incident response through a Layer-7 DDoS while remediating an inherited breach.",
+      "Rebuilt and now run the AWS estate: private networking, containers, encrypted storage, CDN and WAF.",
       "Ship the unglamorous essentials well: payments, RBAC, audit trails, GDPR/DSAR, email infrastructure.",
     ],
   },
@@ -242,7 +302,7 @@ export function Experience() {
   return (
     <section id="experience" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-20">
       <Reveal>
-        <p className="annotation annotation-tick">section 03 — service record</p>
+        <p className="annotation annotation-tick">section 04 — service record</p>
         <h2 className="mt-3 font-extrabold tracking-[-0.02em]" style={{ fontSize: "var(--text-h2)" }}>
           Experience
         </h2>

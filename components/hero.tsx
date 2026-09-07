@@ -53,11 +53,11 @@ export function Hero() {
           animate="show"
           className="mt-8 max-w-[58ch] text-[17px] leading-relaxed text-[var(--color-ink-soft)]"
         >
-          I&apos;m {site.name.split(" ")[0]} — a full stack engineer who takes platforms from first
-          schema to production traffic: the APIs, the frontend, the AWS underneath, and the 3am
-          incident when something pushes back. Four years in, that has meant a platform past{" "}
-          <strong className="text-[var(--color-ink)]">$1M in revenue</strong> and a live DDoS with{" "}
-          <strong className="text-[var(--color-ink)]">~600M requests blocked</strong>.
+          I&apos;m {site.name.split(" ")[0]} — a full stack engineer, four years across analytics
+          platforms, e-commerce, real-time tools and high-stakes SaaS. I take systems from first
+          schema to production traffic — and I&apos;ve taken one over mid-crisis: stepped in after a
+          security incident, steered the team through a live DDoS, and then led that platform to
+          its record — <strong className="text-[var(--color-ink)]">past $1M in revenue</strong>.
         </motion.p>
 
         <motion.div
