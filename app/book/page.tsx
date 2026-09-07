@@ -20,6 +20,7 @@ const expectations = [
 
 export default function BookPage() {
   const hasCal = site.calLink.length > 0
+  const hasGoogle = !hasCal && site.googleBookingUrl.length > 0
   return (
     <>
       <Nav />
@@ -49,7 +50,17 @@ export default function BookPage() {
           </div>
 
           <Reveal delay={0.1} className="mt-8">
-            {hasCal ? (
+            {hasGoogle ? (
+              <div className="plate overflow-hidden bg-white">
+                {/* Google renders its booking page light; the white plate keeps
+                    the seam clean against the blueprint. */}
+                <iframe
+                  src={site.googleBookingUrl}
+                  title="Book a call"
+                  style={{ width: "100%", height: "720px", border: 0 }}
+                />
+              </div>
+            ) : hasCal ? (
               <div className="plate overflow-hidden">
                 {/* Cal.com inline embed — styled to sit on the blueprint. */}
                 <div id="cal-inline" style={{ width: "100%", height: "680px", overflow: "auto" }} />

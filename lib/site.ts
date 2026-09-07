@@ -11,8 +11,13 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/mustafa-mehboob-b21068224/",
   github: "https://github.com/mustafa-mx",
   // Create a free account at cal.com, then put your handle/event here,
-  // e.g. "mustafa-mehboob/intro-call". Leave "" to show the email fallback.
+  // e.g. "mustafa-mehboob/intro-call". Leave "" to skip.
   calLink: "",
+  // OR: Google Calendar's own appointment schedule. In Google Calendar
+  // (desktop): Create -> Appointment schedule -> save -> Share -> copy the
+  // booking-page link (calendar.app.google/... or the iframe src). Used when
+  // calLink is empty. Leave "" to show the email/WhatsApp fallback.
+  googleBookingUrl: "",
   resumeUrl: "/Mustafa-Mehboob-Resume.pdf", // drop your PDF into /public
 } as const
 
