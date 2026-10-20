@@ -76,7 +76,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "scada",
     name: "Grain-aeration SCADA",
-    role: "Backend and integration lead · In progress",
+    role: "Backend and integration · In progress",
     year: "2026",
     tagline: "Industrial monitoring and control: a NestJS OPC UA service feeding a React HMI in real time.",
     problem: [
@@ -118,7 +118,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "mdrive",
     name: "mDrive Asia",
     role: "Lead engineer",
-    year: "2024",
+    year: "2022 to 2025",
     tagline: "E-commerce storefront and admin, from checkout to fulfilment.",
     live: "https://mdriveasia.com",
     image: { src: "/work/mdriveasia.png", alt: "mDrive Asia storefront" },
