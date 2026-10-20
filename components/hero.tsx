@@ -2,8 +2,9 @@
 
 import Link from "next/link"
 import { motion, useReducedMotion } from "framer-motion"
-import { ArrowDown, ArrowUpRight } from "lucide-react"
+import { ArrowDown, ArrowUpRight, FileDown } from "lucide-react"
 import { site } from "@/lib/site"
+import { availability } from "@/lib/content"
 import { BlueprintCanvas } from "./blueprint-canvas"
 
 const line = {
@@ -20,7 +21,24 @@ export function Hero() {
   return (
     <section className="blueprint-grid relative overflow-hidden pt-14">
       <BlueprintCanvas />
-      <div className="relative mx-auto flex min-h-[92vh] max-w-6xl flex-col justify-center px-5 pb-24 pt-16">
+      <div className="relative mx-auto flex min-h-[92vh] max-w-6xl flex-col justify-center px-4 pb-24 pt-16 sm:px-5">
+        <motion.div
+          initial={reduce ? false : { opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.05, duration: 0.6 }}
+          className="mb-5 inline-flex w-fit items-center gap-2.5 border border-[var(--color-line-strong)] bg-[rgba(10,32,54,0.6)] px-3 py-1.5"
+        >
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping bg-[var(--color-ok)] opacity-60" />
+            <span className="relative inline-flex h-2 w-2 bg-[var(--color-ok)]" />
+          </span>
+          <span className="font-mono text-[11.5px] uppercase tracking-[0.12em] text-[var(--color-ink)]">
+            {availability.label}
+          </span>
+          <span className="hidden text-[12.5px] text-[var(--color-ink-soft)] sm:inline">
+            · {availability.detail}
+          </span>
+        </motion.div>
         <motion.p
           initial={reduce ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -53,11 +71,12 @@ export function Hero() {
           animate="show"
           className="mt-8 max-w-[58ch] text-[17px] leading-relaxed text-[var(--color-ink-soft)]"
         >
-          I&apos;m {site.name.split(" ")[0]} — a full stack engineer, four years across analytics
-          platforms, e-commerce, real-time tools and high-stakes SaaS. I take systems from first
-          schema to production traffic — and I&apos;ve taken one over mid-crisis: stepped in after a
-          security incident, steered the team through a live DDoS, and then led that platform to
-          its record — <strong className="text-[var(--color-ink)]">past $1M in revenue</strong>.
+          I&apos;m {site.name.split(" ")[0]}, a full stack engineer: TypeScript and Node, React and
+          Next.js, PostgreSQL, and AWS architecture I design and run myself. I take systems from first
+          schema to production traffic, and I have taken one over mid-crisis: contained the incident,
+          closed the way in, rebuilt the AWS estate, and led the team as that platform passed{" "}
+          <strong className="text-[var(--color-ink)]">$1M in revenue</strong>. Open to short-term
+          contracts and full-time remote roles.
         </motion.p>
 
         <motion.div
@@ -74,12 +93,11 @@ export function Hero() {
             See the work <ArrowDown className="h-4 w-4" />
           </Link>
           <a
-            href={site.github}
-            target="_blank"
-            rel="noreferrer"
-            className="px-3 py-3 text-[14px] text-[var(--color-ink-faint)] transition-colors hover:text-[var(--color-tracer)]"
+            href={site.resumeUrl}
+            download
+            className="inline-flex items-center gap-2 px-3 py-3 text-[14px] text-[var(--color-ink-soft)] transition-colors hover:text-[var(--color-tracer)]"
           >
-            GitHub ↗
+            <FileDown className="h-4 w-4" /> Download resume (PDF)
           </a>
         </motion.div>
       </div>

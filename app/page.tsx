@@ -1,6 +1,9 @@
 import { Nav } from "@/components/nav"
 import { Hero } from "@/components/hero"
-import { Experience, FooterCta, Metrics, Range, StackMarquee, Thinking, Work } from "@/components/sections"
+import { Work } from "@/components/work"
+import { Services } from "@/components/services"
+import { Proof } from "@/components/proof"
+import { Experience, FooterCta, Metrics, Range, StackMarquee, Thinking } from "@/components/sections"
 
 export default function Home() {
   return (
@@ -11,8 +14,10 @@ export default function Home() {
         <Metrics />
         <StackMarquee />
         <Work />
+        <Services />
         <Range />
         <Thinking />
+        <Proof />
         <Experience />
         <FooterCta />
       </main>

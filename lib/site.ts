@@ -2,7 +2,8 @@
 export const site = {
   name: "Mustafa Mehboob",
   role: "Full Stack Software Engineer",
-  tagline: "I build production platforms end to end — and keep them standing.",
+  url: "https://mustafa-mehboob.vercel.app",
+  tagline: "I build production platforms end to end, and keep them standing.",
   location: "Lahore, Pakistan",
   timezone: "PKT (UTC+5)",
   email: "mustafaw3451@gmail.com",
