@@ -38,7 +38,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     did: [
       "Contained the incident, found how the attackers got in, and closed that whole class of weakness.",
-      "Rebuilt the AWS architecture: private VPC, CloudFront VPC Origins, private ALB, ECS Fargate, RDS, WAF, KMS-encrypted documents behind signed URLs.",
+      "Rebuilt the AWS architecture: private VPC, CloudFront VPC Origins, private ALB, ECS Fargate, RDS, WAF, AES-256-GCM-encrypted documents behind signed URLs.",
       "Then led a three-engineer team on the product: admin queues and auto-assignment, Adyen, MamoPay and PayPal, JWT with four-role RBAC and authenticator-app MFA, GDPR and DSAR flows.",
     ],
     result: [
@@ -172,7 +172,7 @@ export const engagements = [
   {
     title: "An integration or AWS setup",
     body: "Payments, OAuth and SSO, webhooks, third-party APIs, or an AWS estate that needs doing properly: private networking, containers, CDN, CI/CD, infrastructure as code.",
-    examples: ["Adyen, MamoPay, PayPal with idempotent webhooks", "NextAuth, Microsoft SSO, MFA", "ECS Fargate, RDS, CloudFront, WAF in Terraform"],
+    examples: ["Adyen, MamoPay, PayPal with idempotent webhooks", "NextAuth, Microsoft SSO, MFA", "ECS Fargate, RDS, CloudFront, WAF; Terraform with OIDC deploys"],
   },
   {
     title: "Part-time production ownership",
