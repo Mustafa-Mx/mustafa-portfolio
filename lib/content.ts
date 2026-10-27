@@ -26,7 +26,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "ukvisaportal",
     name: "UKVisaPortal",
-    role: "Took over mid-incident · Team lead",
+    role: "Took over mid-incident · Led the team",
     year: "2026",
     tagline: "UK visa application platform: client portal, admin operations suite, three payment providers.",
     live: "https://ukvisaportal.com",
@@ -118,7 +118,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "mdrive",
     name: "mDrive Asia",
     role: "Lead engineer",
-    year: "2022 to 2025",
+    year: "2023 to 2025",
     tagline: "E-commerce storefront and admin, from checkout to fulfilment.",
     live: "https://mdriveasia.com",
     image: { src: "/work/mdriveasia.png", alt: "mDrive Asia storefront" },

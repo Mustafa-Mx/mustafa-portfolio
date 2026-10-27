@@ -169,24 +169,38 @@ export function Thinking() {
 const experience = [
   {
     company: "Softaims",
-    role: "Software Engineer · Team Lead",
+    role: "Software Engineer",
     period: "Jan 2026 — Present",
     points: [
-      "Took over UKVisaPortal after a security incident and led the team through a live Layer-7 DDoS, then drove the recovered platform past $1M in revenue, its best run yet.",
-      "Lead a 3-engineer team across two visa platforms, owning architecture, delivery and production.",
-      "Rebuilt and now run the AWS estate: private networking, containers, encrypted storage, CDN and WAF.",
-      "Ship the unglamorous essentials well: payments, RBAC, audit trails, GDPR/DSAR, email infrastructure.",
+      "Took over UKVisaPortal during a live attack after a data breach, closed the whole class of weakness, and kept it up through a Layer-7 DDoS.",
+      "Rebuilt its AWS architecture so traffic reaches the application only through CloudFront and the WAF, then led the three-engineer team as revenue passed $1M.",
+      "Co-led WorldVisaHub: versioned form engine, a document pipeline with no long-lived cloud keys, and Terraform staging with keyless OIDC deploys.",
+      "Building an industrial grain-aeration SCADA backend in NestJS over OPC UA.",
     ],
   },
   {
     company: "OptimaGeeks",
     role: "Associate Software Engineer",
-    period: "Feb 2022 — Dec 2025",
+    period: "Jun 2025 — Dec 2025",
     points: [
-      "Led Userbird (analytics + session replay) and mDrive Asia (e-commerce) as primary engineer.",
-      "Shipped 8+ production applications across extensions, bots, backends and automation.",
-      "Two years embedded with a UAE client via staff augmentation: remote, async, and accountable.",
+      "Led Userbird, an analytics and session-replay platform; caching and lazy loading made its dashboard 40% faster.",
+      "Shipped a LinkedIn Sales Navigator to CRM extension, OpenAI-powered CRM tooling, WordPress automation, a Cloudflare Workers bot and a NestJS backend.",
     ],
+  },
+  {
+    company: "Webmended (UAE, remote)",
+    role: "Associate Software Developer",
+    period: "Mar 2023 — Feb 2025",
+    points: [
+      "Led mDrive Asia end to end: storefront, checkout, admin and fulfilment on Next.js, Django and PostgreSQL.",
+      "Built a Django quality-management system and delivered client projects in PHP.",
+    ],
+  },
+  {
+    company: "easybew (Canada, remote)",
+    role: "LAMP Stack Developer",
+    period: "Feb 2022 — Mar 2023",
+    points: ["PHP and MySQL web development for a Canadian company, working remotely."],
   },
 ]
 
