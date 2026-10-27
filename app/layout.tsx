@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   },
   description,
   keywords: [
+    "product engineer",
     "full stack engineer",
     "TypeScript",
     "Node.js",

@@ -71,7 +71,7 @@ export function Hero() {
           animate="show"
           className="mt-8 max-w-[58ch] text-[17px] leading-relaxed text-[var(--color-ink-soft)]"
         >
-          I&apos;m {site.name.split(" ")[0]}, a full stack engineer: TypeScript and Node, React and
+          I&apos;m {site.name.split(" ")[0]}, a product engineer: TypeScript and Node, React and
           Next.js, PostgreSQL, and AWS architecture I design and run myself. I take systems from first
           schema to production traffic, and I have taken one over mid-crisis: contained the incident,
           closed the way in, rebuilt the AWS estate, and led the team as that platform passed{" "}

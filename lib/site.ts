@@ -1,7 +1,7 @@
 // Everything personal lives here — edit this file, never the components.
 export const site = {
   name: "Mustafa Mehboob",
-  role: "Full Stack Software Engineer",
+  role: "Product Engineer",
   url: "https://mustafa-mehboob.vercel.app",
   tagline: "I build production platforms end to end, and keep them standing.",
   location: "Lahore, Pakistan",
@@ -23,7 +23,7 @@ export const site = {
 } as const
 
 export const metrics = [
-  { value: 4, suffix: "+", label: "years shipping production software" },
+  { value: 3, suffix: "+", label: "years shipping production software" },
   { value: 1, prefix: "$", suffix: "M+", label: "revenue processed by a platform I lead" },
   { value: 600, prefix: "~", suffix: "M", label: "hostile requests blocked in one live DDoS" },
   { value: 10, suffix: "+", label: "products taken to production" },

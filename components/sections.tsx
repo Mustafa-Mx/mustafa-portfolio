@@ -81,7 +81,7 @@ export function Range() {
       <Reveal>
         <p className="annotation annotation-tick">section 03 — scope of works</p>
         <h2 className="mt-3 font-extrabold tracking-[-0.02em]" style={{ fontSize: "var(--text-h2)" }}>
-          What four years covers
+          What the work covers
         </h2>
         <p className="mt-3 max-w-[56ch] text-[15px] leading-relaxed text-[var(--color-ink-soft)]">
           Visa platforms are the recent headline, but the range behind them is wider: analytics,
