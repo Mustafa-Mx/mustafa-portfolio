@@ -80,6 +80,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2026",
     tagline: "Industrial monitoring and control: a NestJS OPC UA service feeding a React HMI in real time.",
     live: "https://app.aerationcontrol.com",
+    image: { src: "/work/aerationcontrol.png", alt: "Aeration Control Australia sign-in page" },
     problem: [
       "Hundreds of PLC tags per site, with subscriptions that silently die on reconnect.",
       "Operators need live values and safe writes, with permissions per control.",
@@ -104,6 +105,7 @@ export const caseStudies: CaseStudy[] = [
     year: "2025",
     tagline: "Link shortening, product analytics and session replay.",
     live: "https://linklyhq.com",
+    image: { src: "/work/linklyhq.png", alt: "LinklyHQ public landing page" },
     problem: [
       "Needed an SDK light enough to drop on any site without slowing it down.",
       "Pageviews, events and full session recordings had to land in a warehouse, not a database that would fall over.",
