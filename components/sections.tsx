@@ -169,12 +169,12 @@ export function Thinking() {
 const experience = [
   {
     company: "Softaims",
-    role: "Software Engineer",
+    role: "Software Engineer II",
     period: "Jan 2026 — Present",
     points: [
       "Took over UKVisaPortal during a live attack after a data breach, closed the whole class of weakness, and kept it up through a Layer-7 DDoS.",
       "Rebuilt its AWS architecture so traffic reaches the application only through CloudFront and the WAF, then led the three-engineer team as revenue passed $1M.",
-      "Co-led WorldVisaHub: versioned form engine, a document pipeline with no long-lived cloud keys, and Terraform staging with keyless OIDC deploys.",
+      "Co-led WorldVisaHub: versioned form engine, a document pipeline that holds no permanent cloud keys, and staging as Infrastructure as Code with keyless OIDC deploys.",
       "Building the NestJS and OPC UA backend of a live industrial grain-aeration SCADA platform.",
     ],
   },

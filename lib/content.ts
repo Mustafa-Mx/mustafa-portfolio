@@ -59,7 +59,7 @@ export const caseStudies: CaseStudy[] = [
     problem: [
       "Every country needs a different form, and forms change while applications are in flight.",
       "Applicants upload identity documents from phones with bad lighting and worse framing.",
-      "Document storage had to work with no long-lived cloud credentials anywhere.",
+      "One leaked cloud key could have exposed every applicant's identity documents.",
     ],
     did: [
       "Built a versioned drag-and-drop form engine: 24 field types, conditional logic, live preview, immutable published versions pinned to in-flight orders, in-form payment gating.",
