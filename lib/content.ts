@@ -76,9 +76,10 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "scada",
     name: "Grain-aeration SCADA",
-    role: "Backend and integration · In progress",
+    role: "Backend and integration",
     year: "2026",
     tagline: "Industrial monitoring and control: a NestJS OPC UA service feeding a React HMI in real time.",
+    live: "https://app.aerationcontrol.com",
     problem: [
       "Hundreds of PLC tags per site, with subscriptions that silently die on reconnect.",
       "Operators need live values and safe writes, with permissions per control.",
@@ -90,7 +91,7 @@ export const caseStudies: CaseStudy[] = [
       "Verified against an 800-tag PLC simulator; the monitor service is public as a code sample.",
     ],
     result: [
-      "Simulator-verified end to end; field PLC integration is the next step.",
+      "Live at app.aerationcontrol.com.",
       "The service and its design notes are readable on GitHub.",
     ],
     tech: ["NestJS", "OPC UA", "Redis", "TimescaleDB", "React 19", "SSE"],
@@ -98,10 +99,11 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "userbird",
-    name: "Userbird",
+    name: "LinklyHQ (formerly Userbird)",
     role: "Lead engineer",
     year: "2025",
-    tagline: "Product analytics and session replay, in the spirit of GA and PostHog.",
+    tagline: "Link shortening, product analytics and session replay.",
+    live: "https://linklyhq.com",
     problem: [
       "Needed an SDK light enough to drop on any site without slowing it down.",
       "Pageviews, events and full session recordings had to land in a warehouse, not a database that would fall over.",

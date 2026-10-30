@@ -175,7 +175,7 @@ const experience = [
       "Took over UKVisaPortal during a live attack after a data breach, closed the whole class of weakness, and kept it up through a Layer-7 DDoS.",
       "Rebuilt its AWS architecture so traffic reaches the application only through CloudFront and the WAF, then led the three-engineer team as revenue passed $1M.",
       "Co-led WorldVisaHub: versioned form engine, a document pipeline with no long-lived cloud keys, and Terraform staging with keyless OIDC deploys.",
-      "Building an industrial grain-aeration SCADA backend in NestJS over OPC UA.",
+      "Building the NestJS and OPC UA backend of a live industrial grain-aeration SCADA platform.",
     ],
   },
   {
@@ -183,7 +183,7 @@ const experience = [
     role: "Associate Software Engineer",
     period: "Jun 2025 — Dec 2025",
     points: [
-      "Led Userbird, an analytics and session-replay platform; caching and lazy loading made its dashboard 40% faster.",
+      "Led Userbird (now LinklyHQ), an analytics and session-replay platform; caching and lazy loading made its dashboard 40% faster.",
       "Shipped a LinkedIn Sales Navigator to CRM extension, OpenAI-powered CRM tooling, WordPress automation, a Cloudflare Workers bot and a NestJS backend.",
     ],
   },
